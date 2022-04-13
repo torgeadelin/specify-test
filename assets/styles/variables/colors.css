@@ -1,0 +1,380 @@
+:root {
+  /* COLOR */
+  --common-buttons-common-button-primary-disabled: rgba(255, 255, 255, 0.2);
+  --common-buttons-common-button-primary-hover: rgba(255, 255, 255, 0.8);
+  --common-buttons-common-button-primary-normal: rgba(255, 255, 255, 0.95);
+  --common-buttons-common-button-primary-pressed: rgba(255, 255, 255, 0.7);
+  --common-buttons-common-button-secondary-disabled: rgba(255, 255, 255, 0);
+  --common-buttons-common-button-secondary-hover: rgba(255, 255, 255, 0.07);
+  --common-buttons-common-button-secondary-normal: rgba(255, 255, 255, 0);
+  --common-buttons-common-button-secondary-active-hover: rgba(
+    255,
+    255,
+    255,
+    0.3
+  );
+  --common-buttons-common-button-secondary-active-normal: rgba(
+    255,
+    255,
+    255,
+    0.2
+  );
+  --common-buttons-common-button-secondary-active-pressed: rgba(
+    255,
+    255,
+    255,
+    0.4
+  );
+  --common-controls-common-control-share-content-active: rgb(199, 79, 14);
+  --common-controls-common-control-share-content-inactive: rgb(112, 112, 112);
+  --common-controls-common-control-share-content-selected: rgb(60, 194, 154);
+  --common-outlines-common-outline-button-normal: rgba(255, 255, 255, 0.3);
+  --common-outlines-common-outline-disabled-normal: rgba(255, 255, 255, 0.2);
+  --common-outlines-common-outline-input-normal: rgba(255, 255, 255, 0.5);
+  --common-overlays-common-overlay-primary-normal: rgba(0, 0, 0, 0.9);
+  --common-overlays-common-overlay-secondary-normal: rgba(0, 0, 0, 0.4);
+  --common-text-common-text-black: rgba(0, 0, 0, 0.95);
+  --common-text-common-text-disabled: rgba(255, 255, 255, 0.4);
+  --common-text-common-text-white: rgba(255, 255, 255, 0.95);
+  --common-text-common-text-error: rgb(252, 139, 152);
+  --common-text-common-text-success: rgb(60, 194, 154);
+  --dui-backgrounds-background-accent-normal: rgb(17, 112, 207);
+  --dui-backgrounds-background-alert-default-active: rgb(59, 59, 59);
+  --dui-backgrounds-background-alert-default-hover: rgb(38, 38, 38);
+  --dui-backgrounds-background-alert-default-normal: rgb(38, 38, 38);
+  --dui-backgrounds-background-alert-error-active: rgb(120, 13, 19);
+  --dui-backgrounds-background-alert-error-hover: rgb(79, 14, 16);
+  --dui-backgrounds-background-alert-error-normal: rgb(79, 14, 16);
+  --dui-backgrounds-background-alert-orange-active: rgb(89, 49, 30);
+  --dui-backgrounds-background-alert-orange-hover: rgb(51, 34, 27);
+  --dui-backgrounds-background-alert-orange-normal: rgb(51, 34, 27);
+  --dui-backgrounds-background-alert-purple-active: rgb(96, 30, 102);
+  --dui-backgrounds-background-alert-purple-hover: rgb(59, 24, 64);
+  --dui-backgrounds-background-alert-purple-normal: rgb(59, 24, 64);
+  --dui-backgrounds-background-alert-success-active: rgb(19, 66, 49);
+  --dui-backgrounds-background-alert-success-hover: rgb(14, 43, 32);
+  --dui-backgrounds-background-alert-success-normal: rgb(14, 43, 32);
+  --dui-backgrounds-background-alert-theme-active: rgb(6, 58, 117);
+  --dui-backgrounds-background-alert-theme-hover: rgb(10, 39, 74);
+  --dui-backgrounds-background-alert-theme-normal: rgb(10, 39, 74);
+  --dui-backgrounds-background-alert-warning-active: rgb(87, 51, 10);
+  --dui-backgrounds-background-alert-warning-hover: rgb(54, 34, 12);
+  --dui-backgrounds-background-alert-warning-normal: rgb(54, 34, 12);
+  --dui-backgrounds-background-primary-active: rgba(255, 255, 255, 0.11);
+  --dui-backgrounds-background-primary-disabled: rgba(255, 255, 255, 0.11);
+  --dui-backgrounds-background-primary-ghost: rgba(255, 255, 255, 0);
+  --dui-backgrounds-background-primary-hover: rgba(255, 255, 255, 0.07);
+  --dui-backgrounds-background-secondary-active: rgba(255, 255, 255, 0.3);
+  --dui-backgrounds-background-secondary-disabled: rgba(255, 255, 255, 0);
+  --dui-backgrounds-background-secondary-hover: rgba(255, 255, 255, 0.2);
+  --dui-backgrounds-background-secondary-normal: rgba(255, 255, 255, 0.11);
+  --dui-backgrounds-background-solid-primary-normal: rgb(0, 0, 0);
+  --dui-backgrounds-background-solid-quaternary-normal: rgb(59, 59, 59);
+  --dui-backgrounds-background-solid-secondary-normal: rgb(26, 26, 26);
+  --dui-backgrounds-background-solid-tertiary-normal: rgb(38, 38, 38);
+  --dui-buttons-button-accent-hover: rgb(3, 82, 166);
+  --dui-buttons-button-accent-normal: rgb(17, 112, 207);
+  --dui-buttons-button-accent-pressed: rgb(6, 58, 117);
+  --dui-buttons-button-cancel-hover: rgb(171, 10, 21);
+  --dui-buttons-button-cancel-normal: rgb(219, 31, 46);
+  --dui-buttons-button-cancel-pressed: rgb(120, 13, 19);
+  --dui-buttons-button-inverted-hover: rgb(38, 38, 38);
+  --dui-buttons-button-inverted-normal: rgb(15, 15, 15);
+  --dui-buttons-button-inverted-pressed: rgb(59, 59, 59);
+  --dui-buttons-button-join-hover: rgb(24, 94, 70);
+  --dui-buttons-button-join-normal: rgb(29, 128, 95);
+  --dui-buttons-button-join-pressed: rgb(19, 66, 49);
+  --dui-buttons-button-primary-disabled: rgba(255, 255, 255, 0.2);
+  --dui-buttons-button-primary-hover: rgba(255, 255, 255, 0.8);
+  --dui-buttons-button-primary-normal: rgba(255, 255, 255, 0.95);
+  --dui-buttons-button-primary-pressed: rgba(255, 255, 255, 0.7);
+  --dui-buttons-button-secondary-disabled: rgba(255, 255, 255, 0);
+  --dui-buttons-button-secondary-hover: rgba(255, 255, 255, 0.07);
+  --dui-buttons-button-secondary-normal: rgba(255, 255, 255, 0);
+  --dui-buttons-button-secondary-pressed: rgba(255, 255, 255, 0.2);
+  --dui-buttons-button-secondary-active-hover: rgba(255, 255, 255, 0.3);
+  --dui-buttons-button-secondary-active-normal: rgba(255, 255, 255, 0.2);
+  --dui-buttons-button-secondary-active-pressed: rgba(255, 255, 255, 0.4);
+  --dui-controls-control-active-active: rgb(17, 112, 207);
+  --dui-controls-control-active-disabled: rgb(6, 58, 117);
+  --dui-controls-control-active-hover: rgb(52, 146, 235);
+  --dui-controls-control-active-normal: rgb(100, 180, 250);
+  --dui-controls-control-active-pressed: rgb(17, 112, 207);
+  --dui-controls-control-inactive-disabled: rgba(255, 255, 255, 0.11);
+  --dui-controls-control-inactive-hover: rgba(255, 255, 255, 0.3);
+  --dui-controls-control-inactive-normal: rgba(255, 255, 255, 0.2);
+  --dui-controls-control-inactive-pressed: rgba(255, 255, 255, 0.4);
+  --dui-illustrations-illustration-default: rgb(255, 255, 255);
+  --dui-indicators-indicator-attention: rgb(245, 88, 104);
+  --dui-indicators-indicator-caution: rgb(207, 121, 0);
+  --dui-indicators-indicator-locked: rgb(143, 143, 143);
+  --dui-indicators-indicator-secure: rgb(52, 146, 235);
+  --dui-indicators-indicator-stable: rgb(39, 161, 122);
+  --dui-indicators-indicator-unstable: rgb(242, 107, 29);
+  --dui-mobile-solid-background-default-grouped-background-primary-normal: rgb(
+    0,
+    0,
+    0
+  );
+  --dui-mobile-solid-background-default-grouped-background-quaternary-normal: rgb(
+    59,
+    59,
+    59
+  );
+  --dui-mobile-solid-background-default-grouped-background-secondary-normal: rgb(
+    26,
+    26,
+    26
+  );
+  --dui-mobile-solid-background-default-grouped-background-tertiary-normal: rgb(
+    38,
+    38,
+    38
+  );
+  --dui-outlines-outline-button-normal: rgba(255, 255, 255, 0.3);
+  --dui-outlines-outline-cancel-normal: rgb(252, 139, 152);
+  --dui-outlines-outline-disabled-normal: rgba(255, 255, 255, 0.2);
+  --dui-outlines-outline-input-active: rgba(255, 255, 255, 0.9);
+  --dui-outlines-outline-input-normal: rgba(255, 255, 255, 0.5);
+  --dui-outlines-outline-join-normal: rgb(60, 194, 154);
+  --dui-outlines-outline-overlay-normal: rgb(173, 173, 173);
+  --dui-outlines-outline-primary-normal: rgba(255, 255, 255, 0.4);
+  --dui-outlines-outline-secondary-normal: rgba(255, 255, 255, 0.2);
+  --dui-outlines-outline-share-active: rgb(242, 107, 29);
+  --dui-outlines-outline-share-inactive: rgb(143, 143, 143);
+  --dui-outlines-outline-share-selected: rgb(39, 161, 122);
+  --dui-outlines-outline-theme-normal: rgb(100, 180, 250);
+  --dui-overlays-overlay-primary-normal: rgba(0, 0, 0, 0.7);
+  --dui-scrollbars-scrollbar-arrow-normal: rgba(255, 255, 255, 0.7);
+  --dui-scrollbars-scrollbar-arrow-background-hover: rgba(255, 255, 255, 0.11);
+  --dui-scrollbars-scrollbar-arrow-background-normal: rgba(255, 255, 255, 0);
+  --dui-scrollbars-scrollbar-arrow-background-press: rgba(255, 255, 255, 0.2);
+  --dui-scrollbars-scrollbar-backgorund-secondary-normal: rgba(
+    255,
+    255,
+    255,
+    0.11
+  );
+  --dui-scrollbars-scrollbar-background-secondary-ghost: rgba(255, 255, 255, 0);
+  --dui-scrollbars-scrollbar-button: rgba(255, 255, 255, 0.2);
+  --dui-scrollbars-scrollbar-button-hover: rgba(255, 255, 255, 0.3);
+  --dui-scrollbars-scrollbar-button-press: rgba(255, 255, 255, 0.4);
+  --dui-teaching-teaching-background-normal: rgb(255, 255, 255);
+  --dui-teaching-teaching-button-primary-disabled: rgba(0, 0, 0, 0.2);
+  --dui-teaching-teaching-button-primary-hover: rgba(0, 0, 0, 0.8);
+  --dui-teaching-teaching-button-primary-normal: rgba(0, 0, 0, 0.95);
+  --dui-teaching-teaching-button-primary-pressed: rgba(0, 0, 0, 0.7);
+  --dui-teaching-teaching-button-secondary-hover: rgba(0, 0, 0, 0.07);
+  --dui-teaching-teaching-button-secondary-normal: rgba(0, 0, 0, 0);
+  --dui-teaching-teaching-button-secondary-pressed: rgba(0, 0, 0, 0.2);
+  --dui-teaching-teaching-outline-normal: rgba(0, 0, 0, 0.2);
+  --dui-teaching-teaching-outline-button-normal: rgba(0, 0, 0, 0.3);
+  --dui-teaching-teaching-outline-disabled-normal: rgba(0, 0, 0, 0.2);
+  --dui-teaching-teaching-outline-theme-normal: rgb(17, 112, 207);
+  --dui-teaching-teaching-text-accent-disabled: rgba(0, 0, 0, 0.4);
+  --dui-teaching-teaching-text-accent-hover: rgb(10, 39, 74);
+  --dui-teaching-teaching-text-accent-normal: rgb(3, 83, 168);
+  --dui-teaching-teaching-text-primary-disabled: rgba(0, 0, 0, 0.4);
+  --dui-text-text-highlight: rgb(6, 58, 117);
+  --dui-text-text-accent-active: rgb(191, 227, 255);
+  --dui-text-text-accent-hover: rgb(191, 227, 255);
+  --dui-text-text-accent-normal: rgb(100, 180, 250);
+  --dui-text-text-alert-orange-active: rgb(250, 244, 235);
+  --dui-text-text-alert-orange-hover: rgb(250, 244, 235);
+  --dui-text-text-alert-orange-normal: rgb(255, 202, 153);
+  --dui-text-text-alert-purple-active: rgb(252, 225, 252);
+  --dui-text-text-alert-purple-hover: rgb(252, 225, 252);
+  --dui-text-text-alert-purple-normal: rgb(242, 148, 241);
+  --dui-text-text-error-active: rgb(255, 212, 218);
+  --dui-text-text-error-hover: rgb(255, 212, 218);
+  --dui-text-text-error-normal: rgb(252, 139, 152);
+  --dui-text-text-inverted-disabled: rgba(0, 0, 0, 0.5);
+  --dui-text-text-inverted-normal: rgba(0, 0, 0, 0.95);
+  --dui-text-text-primary-disabled: rgba(255, 255, 255, 0.4);
+  --dui-text-text-primary-normal: rgba(255, 255, 255, 0.95);
+  --dui-text-text-secondary-normal: rgba(255, 255, 255, 0.7);
+  --dui-text-text-secondary-inverted-normal: rgba(0, 0, 0, 0.6);
+  --dui-text-text-success-active: rgb(159, 237, 216);
+  --dui-text-text-success-hover: rgb(159, 237, 216);
+  --dui-text-text-success-normal: rgb(60, 194, 154);
+  --dui-text-text-team-default-active: rgba(255, 255, 255, 0.95);
+  --dui-text-text-team-default-hover: rgba(255, 255, 255, 0.7);
+  --dui-text-text-team-default-normal: rgba(255, 255, 255, 0.7);
+  --dui-text-text-warning-active: rgb(255, 218, 148);
+  --dui-text-text-warning-hover: rgb(255, 218, 148);
+  --dui-text-textwarning-normal: rgb(242, 153, 10);
+  --dui-whiteboard-whiteboard-sticky-note-cyan: rgb(34, 199, 214);
+  --dui-whiteboard-whiteboard-sticky-note-mint: rgb(48, 201, 176);
+  --dui-whiteboard-whiteboard-sticky-note-purple: rgb(242, 148, 241);
+  --dui-whiteboard-whiteboard-sticky-note-red: rgb(255, 149, 128);
+  --dui-whiteboard-whiteboard-sticky-note-yellow: rgb(255, 193, 79);
+  --dui-i-os-global-tint-normal: rgb(52, 146, 235);
+  --dui-i-os-global-tint-selected: rgb(17, 112, 207);
+  --lui-backgrounds-background-accent-normal: rgb(17, 112, 207);
+  --lui-backgrounds-background-alert-default-active: rgb(222, 222, 222);
+  --lui-backgrounds-background-alert-default-hover: rgb(237, 237, 237);
+  --lui-backgrounds-background-alert-default-normal: rgb(237, 237, 237);
+  --lui-backgrounds-background-alert-error-active: rgb(255, 212, 218);
+  --lui-backgrounds-background-alert-error-hover: rgb(255, 232, 234);
+  --lui-backgrounds-background-alert-error-normal: rgb(255, 232, 234);
+  --lui-backgrounds-background-alert-orange-active: rgb(252, 228, 199);
+  --lui-backgrounds-background-alert-orange-hover: rgb(250, 244, 235);
+  --lui-backgrounds-background-alert-orange-normal: rgb(250, 244, 235);
+  --lui-backgrounds-background-alert-purple-active: rgb(252, 225, 252);
+  --lui-backgrounds-background-alert-purple-hover: rgb(252, 242, 252);
+  --lui-backgrounds-background-alert-purple-normal: rgb(252, 242, 252);
+  --lui-backgrounds-background-alert-success-active: rgb(159, 237, 216);
+  --lui-backgrounds-background-alert-success-hover: rgb(206, 245, 235);
+  --lui-backgrounds-background-alert-success-normal: rgb(206, 245, 235);
+  --lui-backgrounds-background-alert-theme-active: rgb(191, 227, 255);
+  --lui-backgrounds-background-alert-theme-hover: rgb(219, 240, 255);
+  --lui-backgrounds-background-alert-theme-normal: rgb(219, 240, 255);
+  --lui-backgrounds-background-alert-warning-active: rgb(255, 218, 148);
+  --lui-backgrounds-background-alert-warning-hover: rgb(255, 235, 194);
+  --lui-backgrounds-background-alert-warning-normal: rgb(255, 235, 194);
+  --lui-backgrounds-background-primary-active: rgba(0, 0, 0, 0.11);
+  --lui-backgrounds-background-primary-disabled: rgba(0, 0, 0, 0.11);
+  --lui-backgrounds-background-primary-ghost: rgba(0, 0, 0, 0);
+  --lui-backgrounds-background-primary-hover: rgba(0, 0, 0, 0.07);
+  --lui-backgrounds-background-secondary-active: rgba(0, 0, 0, 0.3);
+  --lui-backgrounds-background-secondary-disabled: rgba(0, 0, 0, 0);
+  --lui-backgrounds-background-secondary-hover: rgba(0, 0, 0, 0.2);
+  --lui-backgrounds-background-secondary-normal: rgba(0, 0, 0, 0.11);
+  --lui-backgrounds-background-solid-primary-normal: rgb(255, 255, 255);
+  --lui-backgrounds-background-solid-quatranary-normal: rgb(255, 255, 255);
+  --lui-backgrounds-background-solid-secondary-normal: rgb(237, 237, 237);
+  --lui-backgrounds-background-solid-tertiary-normal: rgb(247, 247, 247);
+  --lui-buttons-button-accent-hover: rgb(3, 82, 166);
+  --lui-buttons-button-accent-normal: rgb(17, 112, 207);
+  --lui-buttons-button-accent-pressed: rgb(6, 58, 117);
+  --lui-buttons-button-cancel-hover: rgb(171, 10, 21);
+  --lui-buttons-button-cancel-normal: rgb(219, 31, 46);
+  --lui-buttons-button-cancel-pressed: rgb(120, 13, 19);
+  --lui-buttons-button-inverted-hover: rgb(237, 237, 237);
+  --lui-buttons-button-inverted-normal: rgb(255, 255, 255);
+  --lui-buttons-button-inverted-pressed: rgb(222, 222, 222);
+  --lui-buttons-button-join-hover: rgb(24, 94, 70);
+  --lui-buttons-button-join-normal: rgb(29, 128, 95);
+  --lui-buttons-button-join-pressed: rgb(19, 66, 49);
+  --lui-buttons-button-primary-disabled: rgba(0, 0, 0, 0.2);
+  --lui-buttons-button-primary-hover: rgba(0, 0, 0, 0.8);
+  --lui-buttons-button-primary-normal: rgba(0, 0, 0, 0.95);
+  --lui-buttons-button-primary-pressed: rgba(0, 0, 0, 0.7);
+  --lui-buttons-button-secondary-disabled: rgba(0, 0, 0, 0);
+  --lui-buttons-button-secondary-hover: rgba(0, 0, 0, 0.07);
+  --lui-buttons-button-secondary-normal: rgba(0, 0, 0, 0);
+  --lui-buttons-button-secondary-pressed: rgba(0, 0, 0, 0.2);
+  --lui-buttons-button-secondary-active-hover: rgba(0, 0, 0, 0.3);
+  --lui-buttons-button-secondary-active-normal: rgba(0, 0, 0, 0.2);
+  --lui-buttons-button-secondary-active-pressed: rgba(0, 0, 0, 0.4);
+  --lui-controls-control-active-active: rgb(6, 58, 117);
+  --lui-controls-control-active-disabled: rgb(191, 227, 255);
+  --lui-controls-control-active-hover: rgb(3, 83, 168);
+  --lui-controls-control-active-normal: rgb(17, 112, 207);
+  --lui-controls-control-active-pressed: rgb(6, 58, 117);
+  --lui-controls-control-inactive-disabled: rgba(0, 0, 0, 0.11);
+  --lui-controls-control-inactive-hover: rgba(0, 0, 0, 0.3);
+  --lui-controls-control-inactive-normal: rgba(0, 0, 0, 0.2);
+  --lui-controls-control-inactive-pressed: rgba(0, 0, 0, 0.4);
+  --lui-illustrations-illustration-default: rgb(18, 18, 18);
+  --lui-indicators-indicator-attention: rgb(219, 31, 46);
+  --lui-indicators-indicator-caution: rgb(207, 121, 0);
+  --lui-indicators-indicator-locked: rgb(112, 112, 112);
+  --lui-indicators-indicator-secure: rgb(17, 112, 207);
+  --lui-indicators-indicator-stable: rgb(29, 128, 95);
+  --lui-indicators-indicator-unstable: rgb(199, 79, 14);
+  --lui-mobile-solid-background-default-grouped-background-primary-normal: rgb(
+    247,
+    247,
+    247
+  );
+  --lui-mobile-solid-background-default-grouped-background-quaternary-normal: rgb(
+    255,
+    255,
+    255
+  );
+  --lui-mobile-solid-background-default-grouped-background-secondary-normal: rgb(
+    255,
+    255,
+    255
+  );
+  --lui-mobile-solid-background-default-grouped-background-tertiary-normal: rgb(
+    247,
+    247,
+    247
+  );
+  --lui-outlines-outline-button-normal: rgba(0, 0, 0, 0.3);
+  --lui-outlines-outline-cancel-normal: rgb(171, 10, 21);
+  --lui-outlines-outline-disabled-normal: rgba(0, 0, 0, 0.2);
+  --lui-outlines-outline-input-active: rgba(0, 0, 0, 0.9);
+  --lui-outlines-outline-input-normal: rgba(0, 0, 0, 0.5);
+  --lui-outlines-outline-join-normal: rgb(24, 94, 70);
+  --lui-outlines-outline-overlay-normal: rgb(112, 112, 112);
+  --lui-outlines-outline-primary-normal: rgba(0, 0, 0, 0.4);
+  --lui-outlines-outline-secondary-normal: rgba(0, 0, 0, 0.2);
+  --lui-outlines-outline-share-active: rgb(242, 107, 29);
+  --lui-outlines-outline-share-inactive: rgb(143, 143, 143);
+  --lui-outlines-outline-share-selected: rgb(39, 161, 122);
+  --lui-outlines-outline-theme-normal: rgb(17, 112, 207);
+  --lui-overlays-overlay-primary-normal: rgba(255, 255, 255, 0.7);
+  --lui-scrollbars-scrollbar-arrow-normal: rgba(0, 0, 0, 0.6);
+  --lui-scrollbars-scrollbar-arrow-background-hover: rgba(0, 0, 0, 0.11);
+  --lui-scrollbars-scrollbar-arrow-background-normal: rgba(0, 0, 0, 0);
+  --lui-scrollbars-scrollbar-arrow-background-press: rgba(0, 0, 0, 0.2);
+  --lui-scrollbars-scrollbar-arrow-background-secondary-ghost: rgba(0, 0, 0, 0);
+  --lui-scrollbars-scrollbar-backgorund-secondary-normal: rgba(0, 0, 0, 0.11);
+  --lui-scrollbars-scrollbar-button-hover: rgba(0, 0, 0, 0.3);
+  --lui-scrollbars-scrollbar-button-normal: rgba(0, 0, 0, 0.2);
+  --lui-scrollbars-scrollbar-button-pressed: rgba(0, 0, 0, 0.4);
+  --lui-teaching-teaching-background-normal: rgb(0, 0, 0);
+  --lui-teaching-teaching-button-primary-disabled: rgba(255, 255, 255, 0.2);
+  --lui-teaching-teaching-button-primary-hover: rgba(255, 255, 255, 0.8);
+  --lui-teaching-teaching-button-primary-normal: rgba(255, 255, 255, 0.95);
+  --lui-teaching-teaching-button-primary-pressed: rgba(255, 255, 255, 0.7);
+  --lui-teaching-teaching-button-secondary-hover: rgba(255, 255, 255, 0.07);
+  --lui-teaching-teaching-button-secondary-normal: rgba(255, 255, 255, 0);
+  --lui-teaching-teaching-button-secondary-pressed: rgba(255, 255, 255, 0.2);
+  --lui-teaching-teaching-outline-normal: rgba(255, 255, 255, 0.2);
+  --lui-teaching-teaching-outline-button-normal: rgba(255, 255, 255, 0.3);
+  --lui-teaching-teaching-outline-disabled-normal: rgba(255, 255, 255, 0.2);
+  --lui-teaching-teaching-outline-theme-normal: rgb(100, 180, 250);
+  --lui-teaching-teaching-text-accent-disabled: rgba(255, 255, 255, 0.4);
+  --lui-teaching-teaching-text-accent-hover: rgb(191, 227, 255);
+  --lui-teaching-teaching-text-accent-normal: rgb(100, 180, 244);
+  --lui-teaching-teaching-text-primary-disabled: rgba(255, 255, 255, 0.4);
+  --lui-text-text-highlight: rgb(191, 227, 255);
+  --lui-text-text-accent-active: rgb(10, 39, 74);
+  --lui-text-text-accent-hover: rgb(10, 39, 74);
+  --lui-text-text-accent-normal: rgb(3, 82, 166);
+  --lui-text-text-alert-orange-active: rgb(51, 34, 27);
+  --lui-text-text-alert-orange-hover: rgb(51, 34, 27);
+  --lui-text-text-alert-orange-normal: rgb(145, 64, 23);
+  --lui-text-text-alert-purple-active: rgb(59, 24, 64);
+  --lui-text-text-alert-purple-hover: rgb(147, 32, 153);
+  --lui-text-text-alert-purple-normal: rgb(147, 32, 153);
+  --lui-text-text-error-active: rgb(79, 14, 16);
+  --lui-text-text-error-hover: rgb(79, 14, 16);
+  --lui-text-text-error-normal: rgb(171, 10, 21);
+  --lui-text-text-inverted-disabled: rgba(255, 255, 255, 0.8);
+  --lui-text-text-inverted-normal: rgba(255, 255, 255, 0.95);
+  --lui-text-text-primary-disabled: rgba(0, 0, 0, 0.4);
+  --lui-text-text-primary-normal: rgba(0, 0, 0, 0.95);
+  --lui-text-text-secondary-normal: rgba(0, 0, 0, 0.6);
+  --lui-text-text-secondary-inverted-normal: rgba(255, 255, 255, 0.7);
+  --lui-text-text-success-active: rgb(14, 43, 32);
+  --lui-text-text-success-hover: rgb(14, 43, 32);
+  --lui-text-text-success-normal: rgb(24, 94, 70);
+  --lui-text-text-team-default-active: rgba(0, 0, 0, 0.95);
+  --lui-text-text-team-default-hover: rgba(0, 0, 0, 0.6);
+  --lui-text-text-team-default-normal: rgba(0, 0, 0, 0.6);
+  --lui-text-text-warning-active: rgb(54, 34, 12);
+  --lui-text-text-warning-hover: rgb(54, 34, 12);
+  --lui-text-text-warning-normal: rgb(125, 71, 5);
+  --lui-whiteboard-whiteboard-sticky-note-cyan: rgb(34, 199, 214);
+  --lui-whiteboard-whiteboard-sticky-note-mint: rgb(48, 201, 176);
+  --lui-whiteboard-whiteboard-sticky-note-purple: rgb(242, 148, 241);
+  --lui-whiteboard-whiteboard-sticky-note-red: rgb(255, 149, 128);
+  --lui-whiteboard-whiteboard-sticky-note-yellow: rgb(255, 193, 79);
+  --lui-i-os-global-tint-normal: rgb(17, 112, 206);
+  --lui-i-os-global-tint-selected: rgb(17, 112, 206);
+}
